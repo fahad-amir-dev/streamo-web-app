@@ -11,6 +11,7 @@
         * {
             margin: 0px;
             padding: 0px;
+            max-width: 100%;
             box-sizing: border-box;
             font-family: "Poppins", sans-serif;
         }
@@ -251,14 +252,12 @@
             width: 100%;
         }
 
-        /* section are starting  in below  */
-
         .section-one {
             background-color: whitesmoke;
         }
 
         .height {
-            /* min-height: 100vh; */
+            min-height: 100vh;
         }
 
         .s-center {
@@ -362,10 +361,6 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
         }
 
-
-
-
-
         .sec-2-img {
             max-width: 750px;
             width: 100%;
@@ -406,11 +401,8 @@
             text-align: left;
         }
 
-        /* -------------------------------------------------------------------------------------------------------- */
-        
-        
         .sec-3-left {
-            order: 1;
+            order: 2;
             max-width: 500px;
             width: 100%;
             aspect-ratio: 500/400;
@@ -421,7 +413,6 @@
             align-items: flex-start;
         }
 
-
         .sec-3-left strong {
             font-size: clamp(32px, 2vw, 40px);
             font-weight: normal;
@@ -431,7 +422,7 @@
 
         .sec-3-left text {
             flex-wrap: wrap;
-            font-size: clamp(15px, 1vw, 22px);
+            font-size: clamp(16px, 1vw, 22px);
             font-weight: 600;
             color: #333333;
             line-height: 1.8;
@@ -439,43 +430,109 @@
             width: 100%;
             text-align: left;
         }
+
         .imgs-main {
             max-width: 550px;
             width: 100%;
-            aspect-ratio: 550/500;
-            border: 2px solid red;
             display: flex;
             flex-wrap: wrap;
-            gap:50px;
-            justify-content:center;
             align-items: center;
-            
         }
-        .sec-3-img1{
+
+        .sec-3-img-top {
+            max-width: 500px;
+            width: 100%;
+            aspect-ratio: 500/250;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .sec-3-img1 {
             max-width: 200px;
             width: 100%;
             aspect-ratio: 1/1;
-            border: 2px solid black;
-            order: 1;
-            flex: 1;
+            background-image: url(imgs/sec-3-img-left.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
         }
-         .sec-3-img2{
-            max-width:200px;
+
+        .sec-3-img2 {
+            max-width: 200px;
             width: 100%;
             aspect-ratio: 1/1;
-            border: 2px solid black;
-            order: 2;
-            flex: 1;
+            background-image: url(imgs/sec-3-img-right.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
         }
-         .sec-3-img3{
+
+        .sec-3-img3 {
             width: 100%;
-            height: 400px;
+            aspect-ratio: 500/400;
             order: 3;
-            border: 2px solid black;
-            flex:2;
-            flex-basis:100% ;
+            background-image: url(imgs/sec-3-img-bottom.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            flex: 2;
+            flex-basis: 100%;
         }
-        
+
+        .section-four {
+            background-image: url(imgs/section-4-bg.webp);
+        }
+
+        .gap {
+            padding-top: 100px;
+        }
+
+        .gap-bottom {
+            padding-bottom: 50px;
+        }
+        .sec-4-imgs-box {
+            max-width: 900px;
+            width: 100%;
+            padding: 0 40px;
+            aspect-ratio: 900/800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .sec-4-img {
+            max-width: 890px;
+            width: 100%;
+            aspect-ratio: 890/800;
+            background-image: url(imgs/section-4-laptop.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bg-btn {
+            max-width: 70px;
+            width: 100%;
+            aspect-ratio: 1/1;
+            background: linear-gradient(135deg, #4fc3f7, #1976d2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+
+        }
+        .triangle-btn {
+            height: 0;
+            width: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 14px solid white;
+            margin-left: 4px;
+        }
     </style>
 
 </head>
@@ -592,17 +649,15 @@
                         quis nostr</p>
                     <p class="text"> <i class="fa-solid fa-check" style="padding-right: 20px;"></i> Nostrud exercitation
                         ullamco</p>
-
                 </div>
                 <div class=" sec-2-img  right-box"></div>
             </div>
         </div>
     </section>
-    <!-- ----------------------------------------------------------------------------- -->
     <section class="section-three">
-        <div class="container  s-center ">
-            <div class="bg-img-ctrl container border">
-                <div class="sec-3-left border">
+        <div class="container  s-center section-3-main">
+            <div class="bg-img-ctrl container  section-3-ctrl">
+                <div class="sec-3-left ">
                     <strong>Get Started With Trial</strong>
                     <div class="wave-line-left"></div>
                     <p class="text"> eiusmod tempor incididunt ut laqua. Ut enim ad minim veniam, quis nostrud
@@ -614,18 +669,37 @@
                         quis nostr</p>
                     <p class="text"> <i class="fa-solid fa-check" style="padding-right: 20px;"></i> Nostrud exercitation
                         ullamco</p>
-
                 </div>
-                <div class="imgs-main border">
-                      <div class="sec-3-img1">1</div>
-                      <div class="sec-3-img2">2</div>
-                      <div class="sec-3-img3">3</div>
+                <div class="imgs-main ">
+                    <div class="sec-3-img-top">
+                        <div class="sec-3-img1"></div>
+                        <div class="sec-3-img2"></div>
+                    </div>
+                    <div class="sec-3-img3"></div>
                 </div>
             </div>
         </div>
     </section>
 
-
+    <section class="section-four ">
+        <div class="container  s-center ">
+            <div class="chose-msg ">
+                <strong style="color: #ffffff;">See Videos How It Works</strong>
+                <div class="wave-line"></div>
+                <p style="color: #ffffff;">Adminim veniam, quis nostrud exercitation ullamco laboris nisi ut pariatur.
+                    Excepteur t labore et dolore magnam aliquam quaerat</p>
+            </div>
+            <div class=" sec-4-imgs-box  ">
+                <div class="sec-4-img">
+                    <div class="bg-btn">
+                        <a href="https://www.youtube.com" target="_blank" class="bg-btn">
+                            <div class="triangle-btn"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="border">
         <div class="container border">
             hi
