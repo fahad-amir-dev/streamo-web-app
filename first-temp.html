@@ -14,6 +14,7 @@
             max-width: 100%;
             box-sizing: border-box;
             font-family: "Poppins", sans-serif;
+            outline: none;
         }
 
         body {
@@ -289,7 +290,6 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: 200px;
-
         }
 
         .chose-msg p {
@@ -518,7 +518,7 @@
         }
 
         .bg-btn {
-            max-width: 70px;
+            max-width: 60px;
             width: 100%;
             aspect-ratio: 1/1;
             background: linear-gradient(135deg, #4fc3f7, #1976d2);
@@ -561,7 +561,7 @@
             width: 100%;
             height: 230px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
 
         }
 
@@ -628,62 +628,160 @@
         .icon-5:hover {
             opacity: 1;
         }
-
         .icon-6 {
             background-image: url(imgs/sec-5-icon-6.webp);
         }
-
         .icon-6:hover {
             opacity: 1;
         }
-
-
         .l-icon-1 {
             background-image: url(imgs/sec-5-icon-1.webp);
         }
-
         .l-icon-1:hover {
             opacity: 1;
         }
-
         .l-icon-2 {
             background-image: url(imgs/sec-5-icon-2.webp);
         }
-
         .l-icon-2:hover {
             opacity: 1;
         }
-
         .l-icon-3 {
             background-image: url(imgs/sec-5-icon-3.webp);
         }
-
         .l-icon-3:hover {
             opacity: 1;
         }
-
         .l-icon-4 {
             background-image: url(imgs/sec-5-icon-4.webp);
         }
-
         .l-icon-4:hover {
             opacity: 1;
         }
-
         .l-icon-5 {
             background-image: url(imgs/sec-5-icon-5.webp);
         }
-
         .l-icon-5:hover {
             opacity: 1;
         }
-
         .l-icon-6 {
             background-image: url(imgs/sec-5-icon-6.webp);
         }
-
         .l-icon-6:hover {
             opacity: 1;
+        }
+        .border-bottom-none {
+            border-bottom: none;
+        }
+        /* footer is starting */
+        .footer-hight {
+            height: 500px;
+            background-image: url(imgs/footer-bg.webp);
+            background-position: top center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-top: clamp(90px ,1vw,120px);
+        }
+
+        .footer-main {
+            height: 300px;
+            max-width: 1200px;
+            display: flex;
+        }
+        .ft-2 {  
+            flex-basis: 22%;
+        }
+        .ft-1 {
+            flex-basis: 35%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+        }
+
+.ft-wave-line {
+            max-width:100px;
+            width: 100%;
+            height: 35px;
+            background-image: url(imgs/wave_line.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 150px;
+        }
+
+        .ft-1 strong {
+            font-size: clamp(18px, 2vw, 20px);
+            font-weight: 600;
+            text-align: left;
+            color: #ffffff;
+            padding-bottom:15px ;
+        }
+        .ft-text {
+            flex-wrap: wrap;
+            font-size: clamp(14px, 2vw, 16px);
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 1.8;
+            max-width: 300px;
+            width: 100%;
+            text-align: left;
+             margin: 20px 0 ;
+        }
+        .socal-icon{
+            max-width:150px;
+            height: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .ft-2 {
+             border-left: 1px solid rgba(255, 255, 255, 0.363);
+            flex-basis: 22%;
+             text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            padding-left: 30px;
+        }
+        .ft-2 ul{
+            list-style: none;
+            color: #ffffff;
+        }
+        .ft-2 li{
+            padding:10px;
+        }
+        .ft-3 a{
+            text-decoration: none;
+            padding-left: 10px;
+            color: #ffffff;
+        }
+        .footer-end{
+            height: 50px;
+            border-top: 2px solid rgb(198, 191, 191);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        } 
+        .end-left ul{
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        .end-left li a{
+          text-decoration: none;
+          color: #ffffff;
+        }
+        .end-left li a:hover{
+          color: #1a4fd6;
+        }
+        .end-left p{
+            color: #ffffff;
         }
     </style>
 
@@ -871,7 +969,7 @@
                     <div class="icon-5 icon"></div>
                     <div class="icon-6 icon"></div>
                 </div>
-                <div class="icon-bar-main">
+                <div class="icon-bar-main border-bottom-none">
                     <div class="large-icon l-icon-3"></div>
                     <div class="large-icon l-icon-2"></div>
                     <div class="large-icon  l-icon-1"></div>
@@ -887,9 +985,74 @@
 
 
 
-    <footer class="border">
-        <div class="container border">
-            hi
+    <footer class="footer-hight ">
+        <div class="container ">
+            <div class="footer-main">
+                <div class="ft-1">
+                    <strong>About streamo</strong>
+                    <div class="ft-wave-line"></div>
+                    <p class="ft-text">Eiusmod tempor incididunt ut la abore et minim ven exerc itation ulla mco lboris naliquip ex ea comm.</p>
+                    <div class="socal-icon">
+                        <i class="fa-brands fa-facebook-f" style="color: rgb(255, 255, 255);"></i>
+                        <i class="fa-brands fa-twitter" style="color: rgb(255, 255, 255);"></i>
+                        <i class="fa-brands fa-linkedin-in" style="color: rgb(255, 255, 255);"></i>
+                        <i class="fa-brands fa-square-instagram" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                </div>
+                <div class=" ft-2 ft-1">
+                    <strong>company</strong>
+                    <div class="ft-wave-line"></div>
+                    <ul><li>Home</li>
+                        <li>About</li>
+                        <li>Service</li>
+                        <li>contact</li>
+                    </ul>
+                </div>
+                <div class="ft-2 ft-1">
+                    <strong>services</strong>
+                    <div class="ft-wave-line"></div>
+                    <ul><li>Video</li>
+                        <li>Movie</li>
+                        <li>Tv Series</li>
+                        <li>Live</li>
+                    </ul>
+                </div>
+                <div class=" ft-3 ft-2 ft-1">
+                    <strong>Contact</strong>
+                    <div class="ft-wave-line"></div>
+                    <ul><li>
+                           <i class="fa-solid fa-phone" style="color: rgb(255, 255, 255);"></i> 
+                           <a href="#">+022222222</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-house-chimney" style="color: rgb(255, 255, 255);"></i>
+                            <a href="#">near your door step</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope" style="color: rgb(255, 255, 255);"></i>
+                            <a href="#">demo@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-house-chimney" style="color: rgb(255, 255, 255);"></i>
+                            <a href="#">near your door step</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+              <div class="footer-end">
+                <div class="end-left">
+                    <p>Copyright © 2022 All right reserve</p>
+                </div>
+                <div class="end-left">
+                   <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                </div>
+              </div>
         </div>
     </footer>
 </body>
