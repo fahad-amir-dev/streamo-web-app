@@ -36,21 +36,21 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-
         .header {
-            min-height: 600px;
-            height: 100%;
-            background-color: #3b8df2;
-            position: relative;
+            height: 1200px;
         }
-
+        .h-bg {
+            background-image: url(imgs/nav-bg.webp);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: 100% 80%;
+        }
         .flex {
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
         }
-
         .logo {
             background-image: url(imgs/streamo-\ logo.webp);
             width: clamp(120px, 15vw, 180px);
@@ -59,18 +59,57 @@
             background-repeat: no-repeat;
             background-size: contain;
         }
-
         .services ul {
             display: flex;
             list-style-type: none;
             gap: clamp(15px, 3vw, 40px);
         }
-
         .services ul li a {
             text-decoration: none;
             color: #ffff;
         }
+.dropdown {
+    position: relative;
+}
 
+.dropdown .content {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: white;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+
+.dropdown:hover .content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.content li {
+    display: block;
+    width: 100%;
+}
+
+.content li a {
+    display: block;
+    padding: 10px 15px;
+    color: black !important;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.content li a:hover {
+    background-color: #ddd;
+}
         .right-nav {
             display: flex;
             justify-content: space-evenly;
@@ -78,7 +117,7 @@
             gap: clamp(15px, 5vw, 100px);
             flex-wrap: wrap;
         }
-
+        /* Home Dropdown */
         .nav-btn button {
             background-color: white;
             color: #1a4fd6;
@@ -89,6 +128,8 @@
             font-weight: 600;
         }
 
+        /* se here ------------------------------------------- */
+
         .menu-icon {
             display: none;
             font-size: 28px;
@@ -96,16 +137,22 @@
             cursor: pointer;
         }
 
+
+
         .hero-text {
             text-align: center;
             color: white;
             padding: clamp(40px, 10vw, 150px) 20px clamp(60px, 8vw, 100px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .hero-text .welcome {
             font-size: clamp(12px, 1.5vw, 14px);
             letter-spacing: 2px;
             margin-bottom: 15px;
+
         }
 
         .hero-text h1 {
@@ -166,12 +213,14 @@
         }
 
         .laptop-img {
-            aspect-ratio: 500 / 300;
-            width: 90%;
-            max-width: 500px;
+            aspect-ratio: 950 / 550;
+            width: 100%;
+            max-width: 900px;
             background-image: url(imgs/streamo-laptop.webp);
             background-position: right;
-            background-size: 100%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-top: clamp(100px, 2vw, 120px);
         }
 
         .center {
@@ -540,9 +589,6 @@
         }
 
         /* problem start from here */
-        .section-five {
-            min-height: 100vh;
-        }
 
         .icon-main-ctrl {
             max-width: 1200px;
@@ -562,7 +608,6 @@
             height: 230px;
             display: flex;
             justify-content: center;
-
         }
 
         .border-bottom {
@@ -628,51 +673,67 @@
         .icon-5:hover {
             opacity: 1;
         }
+
         .icon-6 {
             background-image: url(imgs/sec-5-icon-6.webp);
         }
+
         .icon-6:hover {
             opacity: 1;
         }
+
         .l-icon-1 {
             background-image: url(imgs/sec-5-icon-1.webp);
         }
+
         .l-icon-1:hover {
             opacity: 1;
         }
+
         .l-icon-2 {
             background-image: url(imgs/sec-5-icon-2.webp);
         }
+
         .l-icon-2:hover {
             opacity: 1;
         }
+
         .l-icon-3 {
             background-image: url(imgs/sec-5-icon-3.webp);
         }
+
         .l-icon-3:hover {
             opacity: 1;
         }
+
         .l-icon-4 {
             background-image: url(imgs/sec-5-icon-4.webp);
         }
+
         .l-icon-4:hover {
             opacity: 1;
         }
+
         .l-icon-5 {
             background-image: url(imgs/sec-5-icon-5.webp);
         }
+
         .l-icon-5:hover {
             opacity: 1;
         }
+
         .l-icon-6 {
             background-image: url(imgs/sec-5-icon-6.webp);
         }
+
         .l-icon-6:hover {
             opacity: 1;
         }
+
         .border-bottom-none {
             border-bottom: none;
         }
+
         /* footer is starting */
         .footer-hight {
             height: 500px;
@@ -684,19 +745,22 @@
             display: flex;
             align-items: flex-end;
             justify-content: center;
-            margin-top: clamp(90px ,1vw,120px);
+            margin-top: clamp(90px, 1vw, 120px);
         }
 
         .footer-main {
             height: 300px;
             max-width: 1200px;
             display: flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .ft-2 {  
-            flex-basis: 22%;
-        }
+
+
         .ft-1 {
-            flex-basis: 35%;
+            max-width: 400px;
+            max-width: 100%;
             text-align: left;
             display: flex;
             flex-direction: column;
@@ -704,8 +768,23 @@
             align-items: left;
         }
 
-.ft-wave-line {
-            max-width:100px;
+        .ft-2 {
+            max-width: 250px;
+            width: 100%;
+        }
+
+        .ft-3 {
+            max-width: 250px;
+            width: 100%;
+        }
+
+        .ft-4 {
+            max-width: 300px;
+            max-width: 100%;
+        }
+
+        .ft-wave-line {
+            max-width: 100px;
             width: 100%;
             height: 35px;
             background-image: url(imgs/wave_line.png);
@@ -719,84 +798,182 @@
             font-weight: 600;
             text-align: left;
             color: #ffffff;
-            padding-bottom:15px ;
+            padding-bottom: 15px;
         }
+
         .ft-text {
             flex-wrap: wrap;
-            font-size: clamp(14px, 2vw, 16px);
+            font-size: clamp(12px, 1vw, 16px);
             font-weight: 500;
             color: #ffffff;
             line-height: 1.8;
             max-width: 300px;
             width: 100%;
             text-align: left;
-             margin: 20px 0 ;
+            margin: 20px 0;
         }
-        .socal-icon{
-            max-width:150px;
+
+        .socal-icon {
+            max-width: 150px;
             height: 30px;
             display: flex;
             justify-content: space-around;
             align-items: center;
         }
+
         .ft-2 {
-             border-left: 1px solid rgba(255, 255, 255, 0.363);
-            flex-basis: 22%;
-             text-align: left;
+            border-left: 1px solid rgba(255, 255, 255, 0.363);
+            text-align: left;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: left;
             padding-left: 30px;
         }
-        .ft-2 ul{
+
+        .ft-2 strong {
+            font-size: clamp(18px, 2vw, 20px);
+            font-weight: 600;
+            text-align: left;
+            color: #ffffff;
+            padding-bottom: 15px;
+        }
+
+        .ft-2 ul {
             list-style: none;
             color: #ffffff;
         }
-        .ft-2 li{
-            padding:10px;
+
+        .ft-2 li {
+            padding: 10px;
+            font-size: clamp(14px, 2vw, 16px);
         }
-        .ft-3 a{
+
+        .ft-3 {
+            border-left: 1px solid rgba(255, 255, 255, 0.363);
+            flex-basis: 20%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            padding-left: 30px;
+        }
+
+        .ft-3 strong {
+            font-size: clamp(18px, 2vw, 20px);
+            font-weight: 600;
+            text-align: left;
+            color: #ffffff;
+            padding-bottom: 15px;
+        }
+
+        .ft-3 ul {
+            list-style: none;
+            color: #ffffff;
+        }
+
+        .ft-3 li {
+            padding: 10px;
+            font-size: clamp(14px, 2vw, 16px);
+
+        }
+
+        .ft-4 {
+            border-left: 1px solid rgba(255, 255, 255, 0.363);
+            flex-basis: 20%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            padding-left: 30px;
+        }
+
+        .ft-4 strong {
+            font-size: clamp(18px, 2vw, 20px);
+            font-weight: 600;
+            text-align: left;
+            color: #ffffff;
+            padding-bottom: 15px;
+        }
+
+        .ft-4 ul {
+            list-style: none;
+            color: #ffffff;
+        }
+
+        .ft-4 li {
+            padding: 10px;
+        }
+
+
+        .ft-4 a {
             text-decoration: none;
             padding-left: 10px;
             color: #ffffff;
+            font-size: clamp(12px, 1vw, 16px);
         }
-        .footer-end{
+
+        .footer-end {
             height: 50px;
             border-top: 2px solid rgb(198, 191, 191);
             display: flex;
             justify-content: space-between;
             align-items: center;
-        } 
-        .end-left ul{
+            flex-wrap: wrap;
+        }
+
+        .end-left ul {
             list-style-type: none;
             display: flex;
             gap: 20px;
         }
-        .end-left li a{
-          text-decoration: none;
-          color: #ffffff;
-        }
-        .end-left li a:hover{
-          color: #1a4fd6;
-        }
-        .end-left p{
+
+        .end-left li a {
+            text-decoration: none;
+            font-size: clamp(12px, 2vw, 18px);
             color: #ffffff;
         }
-    </style>
 
+        .end-left li a:hover {
+            color: #1a4fd6;
+        }
+
+        .end-left p {
+            color: #ffffff;
+            font-size: clamp(12px, 2vw, 18px);
+        }
+    </style>
 </head>
 
 <body>
-    <header class=" header ">
-        <div class="container ctrl  " style="padding-top: 30px;">
+    <!-- -------------------------------------------------------------------------- -->
+    <header class=" header h-bg ">
+        <div class="container ctrl " style="padding-top: 30px;">
             <div class="nav flex ">
                 <div class="logo"></div>
                 <div class="right-nav">
                     <div class="services ">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">How it Works</a></li>
+                            <li class="dropdown">
+                                <a href="#">Home</a>
+                                <ul class="content">
+                                    <li><a href="#">Home page 2</a></li>
+                                    <li><a href="#">Home page 2</a></li>
+                                    <li><a href="#">Netflix Style</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">About</a></li>
+                            <li class="dropdown">
+                                <a href="#">How it Works</a>
+                                <ul class="content">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Support & Sloution</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                </ul>
+
+                            </li>
                             <li><a href="#">Pricing</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -804,7 +981,8 @@
                     <div class="nav-btn">
                         <button>Login</button>
                     </div>
-                    <div class="menu-icon" onclick="document.querySelector('.services').classList.toggle('show-menu')">☰
+                    <div class="menu-icon"><i class="fa-notdog-duo fa-solid fa-bars"
+                            style="--fa-primary-color: rgb(255, 255, 255); --fa-secondary-color: rgb(255, 255, 255);"></i>
                     </div>
                 </div>
             </div>
@@ -818,13 +996,14 @@
                     <button class="primary-btn btn">Learn More</button>
                     <button class="secondary-btn btn">Try Free Trial</button>
                 </div>
+                <div class="laptop-img"></div>
             </div>
         </div>
     </header>
     <main class="bg">
         <div class="container  center">
-
-            <div class="laptop-img"></div>
+            <!-- moving this to see change -->
+            <!-- <div class="laptop-img"></div> -->
         </div>
         <div class="circles container center">
             <div class="circle">
@@ -930,7 +1109,6 @@
             </div>
         </div>
     </section>
-
     <section class="section-four ">
         <div class="container  s-center ">
             <div class="chose-msg gap ">
@@ -950,8 +1128,6 @@
             </div>
         </div>
     </section>
-
-
     <section class="section-five ">
         <div class="container  s-center ">
             <div class="chose-msg gap ">
@@ -978,20 +1154,14 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
     <footer class="footer-hight ">
         <div class="container ">
             <div class="footer-main">
                 <div class="ft-1">
                     <strong>About streamo</strong>
                     <div class="ft-wave-line"></div>
-                    <p class="ft-text">Eiusmod tempor incididunt ut la abore et minim ven exerc itation ulla mco lboris naliquip ex ea comm.</p>
+                    <p class="ft-text">Eiusmod tempor incididunt ut la abore et minim ven exerc itation ulla mco lboris
+                        naliquip ex ea comm.</p>
                     <div class="socal-icon">
                         <i class="fa-brands fa-facebook-f" style="color: rgb(255, 255, 255);"></i>
                         <i class="fa-brands fa-twitter" style="color: rgb(255, 255, 255);"></i>
@@ -999,60 +1169,54 @@
                         <i class="fa-brands fa-square-instagram" style="color: rgb(255, 255, 255);"></i>
                     </div>
                 </div>
-                <div class=" ft-2 ft-1">
+                <div class=" ft-2">
                     <strong>company</strong>
                     <div class="ft-wave-line"></div>
-                    <ul><li>Home</li>
+                    <ul>
+                        <li>Home</li>
                         <li>About</li>
                         <li>Service</li>
                         <li>contact</li>
                     </ul>
                 </div>
-                <div class="ft-2 ft-1">
-                    <strong>services</strong>
-                    <div class="ft-wave-line"></div>
-                    <ul><li>Video</li>
-                        <li>Movie</li>
-                        <li>Tv Series</li>
-                        <li>Live</li>
-                    </ul>
-                </div>
-                <div class=" ft-3 ft-2 ft-1">
+                <div class="ft-4">
                     <strong>Contact</strong>
                     <div class="ft-wave-line"></div>
-                    <ul><li>
-                           <i class="fa-solid fa-phone" style="color: rgb(255, 255, 255);"></i> 
-                           <a href="#">+022222222</a>
+
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-phone" style="color: rgb(255, 255, 255);"></i>
+                            <a href="#">+9200</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-house-chimney" style="color: rgb(255, 255, 255);"></i>
-                            <a href="#">near your door step</a>
+                            <a href="#">near your</a>
                         </li>
 
                         <li>
                             <i class="fa-solid fa-envelope" style="color: rgb(255, 255, 255);"></i>
-                            <a href="#">demo@gmail.com</a>
+                            <a href="#">@gmail</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-house-chimney" style="color: rgb(255, 255, 255);"></i>
-                            <a href="#">near your door step</a>
+                            <a href="#">near your</a>
                         </li>
                     </ul>
                 </div>
             </div>
-              <div class="footer-end">
-                <div class="end-left">
+            <div class="footer-end">
+                <div class="end-left .end-left-gap">
                     <p>Copyright © 2022 All right reserve</p>
                 </div>
                 <div class="end-left">
-                   <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
                 </div>
-              </div>
+            </div>
         </div>
     </footer>
 </body>
