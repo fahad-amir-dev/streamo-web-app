@@ -11,7 +11,7 @@
     }
 
     .menu-icon {
-        display: block !important;
+        display: inline-block !important;
     }
 
     .services.show-menu {
@@ -431,12 +431,3 @@
         } 
 }
 
-
-
-.home-menu{
-  position: relative;
-  display: inline-block;
-}
-.dropdown{
-     
-}
