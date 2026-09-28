@@ -314,7 +314,6 @@
             align-items: center;
             justify-content: center;
         }
-/* --------------------------------------------------------------------------------------------- */
         .circles {
             padding-top: clamp(60px, 8vw, 100px);
             justify-content: space-around;
@@ -368,7 +367,6 @@
             background-size: 50%;
         }
 
-        /* ------------------------------------------------------------------------------------------- */
         .circle-body {
             padding-top: 30px;
             color: #333333;
@@ -496,7 +494,6 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
         }
 
-        /* ------------------------------------------------------------------------------- */
         .sec-2-img {
             max-width: 750px;
             width: 100%;
@@ -1238,7 +1235,6 @@
             display: flex;
             justify-content: center;
         }
-
      .ft-3 {
         display: none;
             max-width: 150px;
