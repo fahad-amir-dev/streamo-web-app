@@ -288,7 +288,6 @@
             justify-content: space-between;
             align-items: center;
             gap: 20px;
-            border: 1px solid red;
         }
         .card{
            position: relative;
@@ -333,8 +332,6 @@
             align-items: center;
             justify-content: center;
         }
-        
-
         .card-head strong{
             font-size: 30px;
             color:white;
@@ -378,9 +375,6 @@
             color: #333333;
         }
 
-
-            /* ----------------------------- */
-        
         .icon-main-ctrl {
             max-width: 1200px;
             width: 100%;
@@ -710,43 +704,18 @@
     .hero-text .para {
         text-align: center;
     }
+    /* ----------------------------------------------------------------------------------- */
+.card-box{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+           
+        }
+
+
     .icon-main-ctrl {
         height: auto;
     }
-    .main-card{
-             position: static;
-             margin: 0 auto;
-        margin-top: 50px;
-            max-width: 400px;
-            width:100%;
-            aspect-ratio:1/1;
-        }
-        .row-1{
-             max-width: 400px;
-            width:100%;
-            aspect-ratio:400/130;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            border-bottom: 1px solid #fff;
-            margin-left:clamp(30px,7vw,45px);
-        }
-        .card-circle{
-            max-width:60px;
-            width:100%;
-            aspect-ratio: 1/1;
-            font-size: clamp(15px,2vw,20px)
-        }
-        .card-data{
-           color:#fff;
-           font-weight:600;
-           font-size: clamp(16px,2w,18px);
-           word-spacing: 20%;
-           display: flex;
-           flex-direction: column;
-           gap: 10px;
-        
-        }
+   
     .icon-bar-main {
         justify-content: center;
         gap: 20px;
@@ -786,37 +755,43 @@
         display: none;
     }
 }
+@media  screen and (max-width: 780px)
+{
+.card-box{
+             max-width:700px;
+             width:100%;
+            display: grid;
+            grid-template-columns: 1fr ;
+            align-items: center;
+            justify-items: center; 
+            margin: 0 auto; 
+}
+.card{
+      max-width: 400px;
+      width: 100%;    
+}
+      
+}
 @media  screen and (max-width: 480px) {
     .form-box {
         grid-template-columns: 1fr;
     }
     
-      .row-1{
-             max-width: 300px;
-            width:100%;
-            aspect-ratio:300/130;
-            display: flex;
+    .card-box{
+             max-width:400px;
+             width:100%;
+             min-height: 500px;
+            display: grid;
+            grid-template-columns: 1fr ;
             align-items: center;
-            gap: 20px;
-            border-bottom: 1px solid #fff;
-            margin-left:clamp(30px,7vw,45px);
-        }
-        .card-circle{
-            max-width:60px;
-            width:100%;
-            aspect-ratio: 1/1;
-            font-size: clamp(15px,2vw,20px)
-        }
-        .card-data{
-           color:#fff;
-           font-weight:400;
-           font-size: clamp(14px,2w,16px);
-           word-spacing: 20%;
-           display: flex;
-           flex-direction: column;
-           gap: 10px;
-        
-        }
+            justify-items: center; 
+            margin: 0 auto; 
+}
+.card{
+      max-width: 300px;
+      width: 100%;    
+      min-height: 150px;
+}
     .icon-1{
          background-image: url(imgs/sec-5-icon-1.webp);
         }
