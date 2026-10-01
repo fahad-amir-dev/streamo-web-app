@@ -1198,6 +1198,21 @@
         display: none;
     }
 }
+
+
+
+@media screen and (max-width: 680px)
+{
+     .circles {
+            padding-top: clamp(60px, 8vw, 100px);
+            justify-content:center;
+            max-width: 1200px;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 30px;
+            margin-bottom: 100px;
+        }
+}
 @media screen and (max-width: 480px){
 
 

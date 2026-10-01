@@ -306,7 +306,6 @@ body {
     display: flex;
     column-gap: 30px;
 }
-
 .para-footer{
     padding-top:20px ;
 }
@@ -341,9 +340,7 @@ body {
             align-items: center;
             justify-content: center;
                margin: 0 auto;
-         
         }
-
         .bg-btn {
             max-width: 60px;
             width: 100%;
@@ -354,9 +351,7 @@ body {
             justify-content: center;
             border-radius: 50%;
                margin: 0 auto;
-
         }
-
         .triangle-btn {
             height: 0;
             width: 0;
@@ -364,9 +359,7 @@ body {
             border-bottom: 8px solid transparent;
             border-left: 14px solid white;
             margin-left: 4px;
-
         }
-
 .main-logo-box{
             max-width: 1200px;
             width: 100%;
@@ -378,7 +371,6 @@ body {
             align-items: center;
 }
 .box{
-    /* background-color: dodgerblue; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -426,14 +418,12 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
-/* -------------------------------------------- */
 .hight{
     min-height:800px;
      background-image: url(imgs/team-bg.webp);
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
-    border: 2px solid black;
 }
 .team-box {
     margin-top: 100px;
@@ -529,8 +519,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-/* -------------------------------------- */
 .chose-msg {
     max-width: 1200px;
     width: 100%;
@@ -794,6 +782,37 @@ body {
         display: inline-block !important;
         font-size: 30px;
     }
+     .sec1-main-box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .sec1-right{
+            margin-top:  clamp(18px,8vw,20px);
+        }
+.para-footer
+{
+     margin-bottom: 40px;
+}
+.para-box{
+            display: grid;
+            grid-template-columns: 1fr;      
+}
+.main-logo-box{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    margin-bottom: 50PX;
+}
+
+.team-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-bottom: 50px;
+}
     .icon-main-ctrl {
         height: auto;
     }
@@ -832,6 +851,38 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+         .sec1-main-box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .sec1-right{
+            margin-top:  clamp(18px,8vw,20px);
+        }
+.para-footer
+{
+     margin-bottom: 40px;
+}
+.para-box{
+            display: grid;
+            grid-template-columns: 1fr;      
+}
+.main-logo-box{
+    display:grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    margin-bottom: 50PX;
+}
+
+.team-box {
+    display: grid;
+    grid-template-columns:  1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-bottom: 50px;
+}
+
     .icon-2,
     .icon-3,
     .l-icon-1 {
