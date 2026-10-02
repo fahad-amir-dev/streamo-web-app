@@ -375,7 +375,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
 }
 .box-head{
     max-width: 70px;
@@ -883,7 +882,6 @@ body {
     row-gap: 50px;
     margin-bottom: 50px;
 }
-
     .icon-2,
     .icon-3,
     .l-icon-1 {
