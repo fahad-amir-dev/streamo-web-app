@@ -299,14 +299,15 @@
     .hero{
         margin-top: 100px;
     }
+    /* -------------------------------- */
     .hero h2{
-        font-size: 40px;
+        font-size:clamp(30px ,2vw,45px);
         font-weight: 400;
         color: #333333;
     }
     .hero p{
         max-width: 700px;
-        font-size: 17px;
+        font-size:clamp(15px,4vw,17px);
         line-height:1.5;
         font-weight: 400;
         color: #333333;
@@ -995,34 +996,57 @@
         max-width:400px;
         width:100%;
     }
-    .detail-tag{
-        min-height: 100px;
-        max-width: 600px;
-        color: #333333;
-        display: flex ;
-        align-items: center;
-    }
-    .detail-tag summary{
-        min-height: 150px;
-        max-width: 390px;
-        width: 100%;
-        color: black;
-        font-size:clamp( 14px,6vw,15);
-        overflow: hidden;
-    }
-    .detail-tag:hover summary{
-        color: #1a3fd6;
-    }
-    .detail-tag p{
-        min-height: 300px;
-        max-width: 390px;
-        width: 100%;
-        color: #262525;
-        font-size:clamp( 14px,2vw,16);
+    .first-hero h1{
+         font-size:clamp(29px ,2vw,35px);
         font-weight: 400;
-        line-height: 1.7;
-        overflow: hidden;
+        color: #333333;
     }
+    .first-hero p{
+        font-size:clamp(14px,4vw,16px);
+        line-height:1.5;
+        font-weight: 400;
+        color: #333333;
+        padding-bottom: 20px;
+    }
+ .hero h2{
+        font-size:clamp(25px ,2vw,35px);
+        font-weight: 400;
+        color: #333333;
+    }
+    .hero p{
+        max-width: 700px;
+        font-size:clamp(14px,4vw,16px);
+        line-height:1.5;
+        font-weight: 400;
+        color: #333333;
+        padding-bottom: 20px;
+    }
+    .check-sign{
+        font-size:15px ;
+    }
+    .check-para{
+         max-width: 600px;
+        font-size:clamp(14px,4vw,16px); 
+    }
+    .simple-para{
+        max-width: 700px;
+        font-size:clamp(14px,4vw,16px); 
+        line-height:2;
+        font-weight: 300;
+        color: #333333; 
+        padding-left: 38px;
+        padding-bottom: 30px;
+    
+    }
+
+
+
+
+
+
+
+
+
 .sec2-left strong{
     font-size:clamp(23px,8vw,25px);
     font-weight: 500;
