@@ -20,7 +20,6 @@ body {
        max-width:1250px;
        width:100%;
        min-height: 100px;
-       border: 1px solid black;
 }
 .flex{
     display: flex;
@@ -32,6 +31,8 @@ header{
     width: 100%;
     min-height: 40px;
     position: fixed;
+     background: #fff;   
+    z-index: 10;
 }
 .main-nav{
     max-width: 1200px;
@@ -141,15 +142,17 @@ header{
     background-repeat: no-repeat;
     background-size: contain;
 }
-/* ---------------------------------------------------------------- */
 .my-account{
+      width: 100%;
     min-height: 100vh;
+    padding-top: 100px;
 }
 .main-ctrl{
     width:1250px;
-    /* width:100%; */
+    width:100%;
     display: flex;
     justify-content: space-between;
+  
 
 }
 .sec-left{
@@ -162,8 +165,10 @@ header{
     justify-content: flex-start;
     align-items: flex-start;
     row-gap: 1px;
-     position: fixed;
-     top: 100px;
+      position: fixed;
+    top: 100px;
+    align-self: flex-start;
+    flex-shrink: 0;
 }
 .sec-left::-webkit-scrollbar{
     width: 5px;
@@ -207,13 +212,12 @@ header{
 .text:hover{
     color: #ffc107;
 }
-/* ---------------------------------------------------------------- */
 .sec-right{
-    max-width:1000px ;
-    width:100%;
-    min-height: 100px;
+    flex: 1;
+    min-width: 0;
+    margin-left: 200px;   
     padding: 0 40px;
-    border:3px solid red;
+    min-height: 100px;
 }
 .bottom-border{
     border: 1px solid black;
@@ -223,7 +227,6 @@ header{
     width:100%;
     min-height: 50px;
     padding: 0 40px;
-    border:3px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -244,5 +247,115 @@ header{
     border-bottom: 2px solid dodgerblue;
 }
 .main-content-box{
+    min-height: 100vh;
+    margin-top: 70px ;
   display: flex;
+  column-gap: 20px;
+
 }
+.img-box{
+    max-width: 150px;
+    width:100%;
+    aspect-ratio: 150/160;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+     flex-shrink: 0;
+    align-self: flex-start;
+    background-image:url(imgs/My\ Account-icon.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.camera{
+    font-size: 25px;
+      display: none;
+}
+.img-box:hover .camera{
+    display: block;
+    color: #ffff;
+}
+.content-box strong{
+      font-size: 20px;
+      font-weight: 500;
+      color: #545454;
+}
+.content-box{
+    flex: 1;
+    min-width: 0;
+    min-height: 400px;
+
+}
+.content-box  p{
+      font-size: 16px;
+      font-weight: 400;
+      color: #545454;
+      margin-top: 10px;
+      margin-bottom: 25px;
+
+}
+.form{
+    max-width: 1000px;
+    width: 100%;
+    min-height: 150px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    column-gap: 15px;
+    row-gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #545454;
+}
+
+.field label{
+    font-size: 16px;
+    color: #545454;
+}
+.field input,
+.field select{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 15px;
+    color: #545454;
+}
+.field select{
+    border-radius: 4px;
+    font-weight: 500;
+}
+.btn{
+    margin-top:10px;
+    
+}
+.submit-btn{
+    height: 40px;
+    width: 150px;
+    background-color: dodgerblue;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    margin-bottom:30px;
+    
+}
+.submit-btn:hover{
+    background-color: #545454;
+}
+ .btn {
+            padding: clamp(12px, 2vw, 20px) clamp(25px, 3vw, 35px);
+            border-radius: 5px;
+            border: none;
+            margin: 10px;
+            font-weight: 600;
+        }
+
+        .primary-btn {
+            background-image: linear-gradient(to bottom, #3aa8f5, #1a3fd6);
+            color: white;
+        }
+         .primary-btn:hover {
+            background-image: linear-gradient(to top, #3aa8f5, #1a3fd6);
+        }
