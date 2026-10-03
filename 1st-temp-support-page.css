@@ -1036,17 +1036,7 @@
         color: #333333; 
         padding-left: 38px;
         padding-bottom: 30px;
-    
     }
-
-
-
-
-
-
-
-
-
 .sec2-left strong{
     font-size:clamp(23px,8vw,25px);
     font-weight: 500;
@@ -1060,8 +1050,6 @@
 .btn{
      padding: 18px 27px; 
 }
-
-
 
     .icon-1{
          background-image: url(imgs/sec-5-icon-1.webp);
