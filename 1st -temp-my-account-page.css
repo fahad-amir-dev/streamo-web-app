@@ -19,7 +19,9 @@ body {
 .container{
        max-width:1250px;
        width:100%;
-       min-height: 100px;
+       min-height: 100px; 
+    margin: 0 auto;
+    padding: 0 20px;
 }
 .flex{
     display: flex;
@@ -56,6 +58,8 @@ header{
   width: 100%;
   height: 100%;
 }
+
+
 .nav-right{
  max-width: 600px;
  width: 100%;
@@ -109,7 +113,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+
+    }
 .notification-icon{
     max-width: 40px;
     width: 100%;
@@ -120,7 +125,7 @@ header{
      display: flex;
     justify-content: center;
     align-items: center; 
-}
+  }
 .notification-number{
     position: absolute;
     top:-10px;
@@ -135,7 +140,7 @@ header{
     justify-content: center;
      align-items: center;  
      font-size: 10px;
-}
+   }
 .profile-pick{
     border-left:1px solid gray ;
     border-right:1px solid gray ;
@@ -146,7 +151,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-}
+ }
 .my-account{
       width: 100%;
     min-height: 100vh;
@@ -367,24 +372,21 @@ header{
             background-image: linear-gradient(to top, #3aa8f5, #1a3fd6);
         }
 
-
-/* =====================================================
-   RESPONSIVE (big screen to small screen)
-   ===================================================== */
-
 @media screen and (max-width:1250px){
     .container{
         padding: 0 15px;
     }
 }
 
-@media screen and (max-height:700px){
+@media screen and (max-height:700px)
+{
     .sec-left{
         height: calc(100vh - 120px);
     }
 }
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:1100px)
+{
     .form{
         grid-template-columns: 1fr 1fr;
     }
@@ -396,11 +398,12 @@ header{
     }
 }
 
-@media screen and (max-width:990px){
+@media screen and (max-width:990px)
+{
     .main-ctrl{
         flex-direction: column;
     }
-    .sec-left{
+ .sec-left{
         position: static;
         max-width: 100%;
         width: 100%;
@@ -466,6 +469,7 @@ header{
         padding: 0;
         column-gap: 20px;
     }
+
     .main-content-box{
         flex-direction: column;
         align-items: center;
@@ -473,6 +477,7 @@ header{
         margin-top: 30px;
         min-height: auto;
     }
+
     .img-box{
         align-self: center;
     }
@@ -484,6 +489,7 @@ header{
         min-height: 300px;
     }
 }
+
 
 @media screen and (max-width:600px){
     .search-box{
@@ -537,7 +543,8 @@ header{
     .notification-div{
         width: 45px;
     }
-    .notification-icon{
+    .notification-icon
+    {
         max-width: 34px;
     }
     .inner-box{
@@ -546,16 +553,20 @@ header{
     .icon{
         font-size: 24px;
     }
-    .text{
+    .text
+    {
         font-size: 12px;
     }
-    .style a{
+    .style a
+    {
         font-size: 16px;
     }
-    .content-box strong{
+    .content-box strong
+    {
         font-size: 18px;
     }
-    .content-box p{
+    .content-box p
+    {
         font-size: 14px;
     }
     .field label{
