@@ -353,7 +353,6 @@
         align-items: center;
         box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
     }
-        /* ---------------------------------------------------------------------------- */
     .bg-color{
             background-image: linear-gradient(to left, #0259ae 51%, #12b4f2 100%);
     }
@@ -984,9 +983,6 @@
 .btn{
      padding: 18px 27px; 
 }
-
-
-
     .icon-1{
          background-image: url(imgs/sec-5-icon-1.webp);
         }

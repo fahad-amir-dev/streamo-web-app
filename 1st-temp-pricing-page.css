@@ -709,7 +709,6 @@
     .hero-text .para {
         text-align: center;
     }
-    /* ----------------------------------------------------------------------------------- */
 .card-box{
             display: grid;
             grid-template-columns: 1fr 1fr;

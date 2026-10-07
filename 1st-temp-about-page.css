@@ -512,10 +512,19 @@ body {
     transform: translateX(0) rotate(0deg);
 }
 
-.person-head:hover .circle:nth-child(1) { transition-delay: 0s; }
-.person-head:hover .circle:nth-child(2) { transition-delay: 0.1s; }
-.person-head:hover .circle:nth-child(3) { transition-delay: 0.2s; }
-.person-head:hover .circle:nth-child(4) { transition-delay: 0.3s; }
+.person-head:hover .circle:nth-child(1)
+ { transition-delay: 0s;
+ }
+.person-head:hover .circle:nth-child(2)
+ { 
+    transition-delay: 0.1s; 
+}
+.person-head:hover .circle:nth-child(3) {
+     transition-delay: 0.2s; 
+    }
+.person-head:hover .circle:nth-child(4)
+ { transition-delay: 0.3s;
+ }
 
 .person-footer {
     margin-top: clamp(10px, 8vw, 20px);
@@ -600,12 +609,24 @@ body {
     background-position: center;
     opacity: 0.7;
 }
-.icon-1 { background-image: url(imgs/sec-5-icon-1.webp); }
-.icon-2 { background-image: url(imgs/sec-5-icon-2.webp); }
-.icon-3 { background-image: url(imgs/sec-5-icon-3.webp); }
-.icon-4 { background-image: url(imgs/sec-5-icon-4.webp); }
-.icon-5 { background-image: url(imgs/sec-5-icon-5.webp); }
-.icon-6 { background-image: url(imgs/sec-5-icon-6.webp); }
+.icon-1 { 
+    background-image: url(imgs/sec-5-icon-1.webp);
+ }
+.icon-2 {
+     background-image: url(imgs/sec-5-icon-2.webp);
+     }
+.icon-3 {
+     background-image: url(imgs/sec-5-icon-3.webp);
+     }
+.icon-4 { 
+    background-image: url(imgs/sec-5-icon-4.webp);
+ }
+.icon-5 {
+     background-image: url(imgs/sec-5-icon-5.webp);
+     }
+.icon-6 {
+     background-image: url(imgs/sec-5-icon-6.webp);
+     }
 .icon-1:hover,
 .icon-2:hover,
 .icon-3:hover,
@@ -614,10 +635,18 @@ body {
 .icon-6:hover {
     opacity: 1;
 }
-.l-icon-1 { background-image: url(imgs/sec-5-icon-1.webp); }
-.l-icon-2 { background-image: url(imgs/sec-5-icon-2.webp); }
-.l-icon-3 { background-image: url(imgs/sec-5-icon-3.webp); }
-.l-icon-4 { background-image: url(imgs/sec-5-icon-4.webp); }
+.l-icon-1 {
+     background-image: url(imgs/sec-5-icon-1.webp); 
+    }
+.l-icon-2 { 
+    background-image: url(imgs/sec-5-icon-2.webp);
+ }
+.l-icon-3 {
+     background-image: url(imgs/sec-5-icon-3.webp);
+     }
+.l-icon-4 {
+     background-image: url(imgs/sec-5-icon-4.webp);
+     }
 .l-icon-1:hover,
 .l-icon-2:hover,
 .l-icon-3:hover,
